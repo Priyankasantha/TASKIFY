@@ -1,0 +1,196 @@
+*{
+    background-color: rgb(22, 21, 21);
+    
+} 
+
+
+.to-do-wrap{
+    padding:2%;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    max-height: 80vh;
+    overflow-y:auto;
+    box-shadow: 0px px 5px rgb(254, 182, 0);   
+}
+.to-do-input{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(138, 113, 49);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    color: rgb(254, 182, 0);
+   
+    
+  }
+  
+  .to-do-input-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 5px;
+    margin-left:15px;
+    color:  rgb(254, 182, 0);
+    font-size: larger;
+   
+  }
+  .to-do-input-item label{
+    font-weight: bold;
+    margin-bottom: 7px;
+
+    
+
+  }
+  .to-do-input-item input{
+    padding: 10px;
+    width:250px;
+    margin-bottom: 20px;
+    background-color: white;
+  }  
+   .to-do-input-item input:focus{
+     border:2px solid rgb(254, 182, 0) ;
+     outline: none;
+     
+  }
+
+ 
+
+  .to-do-input-item input:hover{
+    color: rgb(254, 182, 0) ;
+  }
+  .primarybtn{
+    color:black;
+    font-weight: bold;
+    border-color: rgb(254, 182, 0);
+    border-radius: 0px;
+    margin-top: 6px;
+    padding: 10px;
+    width: 60px;
+    cursor:pointer;
+    font-weight:bold;
+    background-color:  rgb(254, 182, 0);
+  
+  }
+  .primarybtn:hover{
+    
+    background-color:  rgb(204, 157, 37);
+  }
+  .secondary-btn{
+    
+    color:white;
+    border-color: rgb(254, 182, 0);
+    border-radius: 0px;
+    margin-top: 6px;
+    padding: 10px;
+    width: fit-content;
+    cursor:pointer;
+    font-weight:bold;
+    
+
+  }
+.active{
+  background-color:  rgb(254, 182, 0);
+  color:black;
+
+}
+
+  .press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-top:3%;
+    color: black;
+    background-color:rgb(252, 183, 7) ;
+    text-align: center;
+    display: block;
+   
+    padding:20px 20px 20px 20px;
+
+    }
+  
+  
+  .to-do-list{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .to-do-list-item{
+    
+
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;  
+  align-items: center;
+  box-shadow: 0px 3px 5px rgb(254, 182, 0) ;
+  color:white ;
+
+
+  }
+  .btn-area{
+    margin-bottom: 30px;
+  }
+  .to-do-list-item h3{
+    color: rgb(254, 182, 0);
+    font-size:25px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .to-do-item p{
+    font-size:14px;
+    margin-top: 8px;
+    color: rgb(161, 161, 161);
+  }
+  .icons{
+    font-size:35px;
+    cursor:pointer;
+  }
+  .icons:hover{
+    color:red;
+  }
+  .check-icon{
+    font-size:25px;
+    margin-left:10px;
+    color:rgb(44, 232, 144);
+    cursor:pointer;
+  }
+  .check-icon:hover{
+    color:rgb(17, 234, 17);
+  }
+  @media (min-width: 700px) {
+    /* Styles for mobile devices */
+    body {
+      font-size: 16px;
+    }
+     .header {
+      text-align: center;/* Hide the header on mobile */
+      color: blue;  
+    }
+
+}
+@media (max-width: 768px) {
+  /* Styles for mobile devices */
+  body {
+    font-size: 16px;
+  }
+  .head {
+    margin-top: 50px; /* Adjust margin-top as needed */
+    text-align: center; /* Center the header on mobile */
+  }
+  .to-do-list-item {
+    padding: 15px;
+  }
+  .to-do-list-item h3 {
+    font-size: 20px;
+  }
+  .to-do-item p {
+    font-size: 12px;
+  }
+  .icons {
+    font-size: 30px;
+  }
+}
